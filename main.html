@@ -1,133 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Details Table</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 800px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-        }
-        
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-            font-weight: 600;
-            font-size: 28px;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 0 auto;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        
-        th {
-            background: yellow;
-            color: black;
-            text-align: left;
-            padding: 16px 20px;
-            font-weight: 800;
-            font-size: 18px;
-            text-transform: uppercase;
-          
-			border:1px solid;
-		
-        }
-        
-        td {
-            padding: 14px 20px;
-            
-            font-size: px;
-            color: #333;
-        }
-        
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        
-        tr:hover {
-            background-color: #e8f4fc;
-            transition: background-color 0.3s ease;
-        }
-        
-        .footer {
-            text-align: center;
-            margin-top: 25px;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-        
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-            
-            th, td {
-                padding: 12px 10px;
-                font-size: 14px;
-            }
-            
-            h1 {
-                font-size: 22px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Details Table</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 28px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      background-color: yellow;
+      border: 1px solid black;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      color: #2c3e50;
+    }
+
+    th {
+      background: yellow;
+      color: black;
+      text-align: left;
+      padding: 16px 20px;
+      font-weight: 800;
+      font-size: 18px;
+      text-transform: uppercase;
+      border: 1px solid;
+    }
+
+    td {
+      padding: 14px 20px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+
+    tr:hover {
+      background-color: #e8f4fc;
+      transition: background-color 0.3s ease;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 25px;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      th, td {
+        padding: 12px 10px;
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      caption {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Student Details</h1>
-        
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Branch</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ShaW</td>
-                    <td>20</td>
-                    <td>CSE</td>
-                </tr>
-                <tr>
-                    <td>Adil</td>
-                    <td>21</td>
-                    <td>ECE</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <div class="footer">
-            <p>Student Information Table</p>
-        </div>
+  <div class="container">
+    <h1>Student Details</h1>
+
+    <table>
+      <caption>Student Details</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Branch</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ShaW</td>
+          <td>20</td>
+          <td>CSE</td>
+        </tr>
+        <tr>
+          <td>Adil</td>
+          <td>21</td>
+          <td>ECE</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      <p>Student Information Table</p>
     </div>
+  </div>
 </body>
 </html>
